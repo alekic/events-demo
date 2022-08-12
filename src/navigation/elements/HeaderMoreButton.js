@@ -5,12 +5,14 @@ import { Platform, StyleSheet } from 'react-native';
 
 import { SETTINGS } from '../routes';
 
+const ripple = { radius: 16 };
+
 export default function HeaderMoreButton({ onPress, size = 24, style }) {
   const navigation = useNavigation();
 
   return (
     <PlatformPressable
-      android_ripple={{ radius: 16 }}
+      android_ripple={ripple}
       onPress={onPress ? onPress : () => navigation.navigate(SETTINGS)}
       style={[styles.pressable, style]}
     >

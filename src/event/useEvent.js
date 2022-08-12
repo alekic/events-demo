@@ -14,5 +14,5 @@ export default function useEvent(event, fn, context, once) {
     return () => {
       emitter.off(event, fn, context, once);
     };
-  }, [event, fn, context, once]);
+  }, [emitter, event, fn, context, once]);
 }
