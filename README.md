@@ -1,3 +1,3 @@
 # events-demo
 
-Example of using [EventEmitter](https://www.npmjs.com/package/eventemitter3) in React Native.
+Example of using [EventEmitter](https://github.com/primus/eventemitter3) in React Native.
